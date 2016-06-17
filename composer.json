@@ -1,0 +1,19 @@
+{
+    "name": "vuer/token",
+    "type": "utils",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "vuer",
+            "email": "rafal.szymanski@post.pl"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Vuer\\Token\\": "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {}
+}
