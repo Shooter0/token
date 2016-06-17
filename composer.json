@@ -2,7 +2,8 @@
     "name": "vuer/token",
     "type": "utils",
     "license": "MIT",
-    "keywords": ["laravel","token"],
+    "description": "A tool for easy public token implementation in some common tasks: password reset, account activation etc.",
+    "keywords": ["vuer","laravel","token"],
     "authors": [
         {
             "name": "vuer",
