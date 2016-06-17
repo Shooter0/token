@@ -2,7 +2,7 @@
     "name": "vuer/token",
     "type": "utils",
     "license": "MIT",
-    "keywords": ["laravel","token","laravel 5.*"],
+    "keywords": ["laravel","token"],
     "authors": [
         {
             "name": "vuer",
