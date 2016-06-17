@@ -29,11 +29,23 @@ trait Tokenable
     /**
      * Get the Token by the type.
      * @param   string  $type
+     * @param   string  $key
      * @return  Token
      */
-    public function getToken($type)
+    public function getToken($type, $key = 'type')
     {
-        return $this->token()->where('type', $type)->first();
+        return $this->token()->where($key, $type)->first();
+    }
+
+    /**
+     * Get the Tokens by the type.
+     * @param   string  $type
+     * @param   string  $key
+     * @return  Token
+     */
+    public function getTokens($type, $key = 'type')
+    {
+        return $this->token()->where($key, $type)->get();
     }
 
     /**
@@ -47,13 +59,14 @@ trait Tokenable
     }
 
     /**
-     * Delete the token.
-     * @param   string  token type
-     * @return  boolean
+     * Delete the tokens.
+     * @param   string $value
+     * @param   string $key
+     * @return  integer count of deleted tokens
      */
-    public function deleteToken($type)
+    public function deleteToken($value, $key = 'type')
     {
-        return $this->token()->where('type', $type)->delete();
+        return $this->token()->where($key, $value)->delete();
     }
 
     /**
